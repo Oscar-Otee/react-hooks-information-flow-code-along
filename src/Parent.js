@@ -3,13 +3,13 @@ import { getRandomColor } from "./randomColorGenerator.js";
 import Child from "./Child";
 
 function Parent() {
-  
+  const randomColor = getRandomColor();
   const [color, setColor] = useState(randomColor);
   const [childrenColor, setChildrenColor] = useState("#FFF");
 
   function handleChangeColor(newChildColor) {
-    const randomColor = getRandomColor();
-    setColor(randomColor); // update color state to a new value
+    const newRandomColor = getRandomColor();
+    setColor(newRandomColor); // update color state to a new value
     setChildrenColor(newChildColor);
   }
 
