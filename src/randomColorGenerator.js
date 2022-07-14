@@ -7,4 +7,5 @@ export function getRandomColor() {
     color += letters[Math.floor(Math.random() * 11)];
   }
   return color;
+  
 }
